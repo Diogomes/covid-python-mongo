@@ -1,0 +1,189 @@
+    1  sudo apt update
+    2  sudo apt install build-essential git neofetch vim 
+    3  sudo reboot 
+    4  sudo chmod a+x VBoxLinuxAdditions.run 
+    5  sudo sh autorun.sh 
+    6  sudo vim /etc/apt/sources.list
+    7  sudo apt update
+    8  sudo vim /etc/apt/sources.list
+    9  sudo pluma /etc/apt/sources.list
+   10  sudo apt update
+   11  sudo pluma /etc/apt/sources.list
+   12  sudo apt update
+   13  sudo apt upgrade 
+   14  sudo apt dist-upgrade 
+   15  neofetch 
+   16  sudo apt install synaptic 
+   17  sudo synaptic
+   18  neofetch 
+   19  sudo apt update
+   20  sudo apt upgrade 
+   21  sudo apt dist-upgrade 
+   22  sudo apt install telegram-desktop 
+   23  sudo apt install mongodb
+   24  sudo apt install docker-compose 
+   25  sudo apt install python3-pip
+   26  cd Downloads/Telegram\ Desktop/
+   27  sudo docker-compose up -d 
+   28  ls
+   29  cd MongoDB/
+   30  ls
+   31  cd ..
+   32  python3 consumirApi.py 
+   33  pip3 install pymongo
+   34  python3 consumirApi.py 
+   35  ls
+   36  python3 consumirApi.py 
+   37  neofetch 
+   38  sudo apt update && sudo apt upgrade -y ; sudo apt dist-upgrade -y ; sudo apt autoremove -y ; sudo shutdown - h now
+   39  sudo apt update && sudo apt upgrade -y ; sudo apt dist-upgrade -y ; sudo apt autoremove -y ; sudo shutdown -h now
+   40  sudo apt update
+   41  sudo apt upgrade 
+   42  sudo apt dist-upgrade -y 
+   43  sudo apt install xubuntu-core 
+   44  sudo apt install i3 dmenu lxde lxdm
+   45  sudo shutdown -h now
+   46  sudo apt update 
+   47  sudo apt install mongo-tools 
+   48  cd Downloads/Telegram\ Desktop/trabalho-mongo/
+   49  ls
+   50  sudo docker-compose up -d 
+   51  sudo apt install mongo-tools 
+   52  man importmongo
+   53  man import-mongo
+   54  man mongoimport 
+   55  mongoimport --help 
+   56  ls
+   57  sudo docker-compose up -d 
+   58  ls
+   59  sudo apt install libreoffice-calc
+   60  sudo apt install libreoffice
+   61  ls[B
+   62  mongoimport -d covid -c brasil --type csv --headerline --file ~/Downloads/Telegram\ Desktop/HIST_PAINEL_COVIDBR_03abr2021.csv 
+   63  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --authenticationDatabase admin --username 'matias' --password 'MongoExpress2021!'
+   64  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --authenticationDatabase admin --username 'root' --password 'MongoDB2021!'
+   65  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --authenticationDatabase admin --username '****' --password '*******'
+   66  mongoimport --host=127.0.0.1
+   67  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --authenticationDatabase admin --username 'root' --password 'MongoDB2021!'
+   68  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --authenticationDatabase admin --username 'matias' --password 'MongoExpress2021!'
+   69  sudo apt install mongodb
+   70  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --authenticationDatabase admin --username 'matias' --password 'MongoExpress2021!'
+   71  mongoimport -d covid -c brasil --type csv --file ~/Downloads/Telegram\ Desktop/HIST_PAINEL_COVIDBR_03abr2021.csv --headerline
+   72  mongoimport -db covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --authenticationDatabase admin --username 'matias' --password 'MongoExpress2021!'
+   73  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --authenticationDatabase admin --username 'matias' --password 'MongoExpress2021!'
+   74  sudo docker-compose up -d 
+   75  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --authenticationDatabase admin --username 'matias' --password 'MongoExpress2021!'
+   76  ls
+   77  cd ..
+   78  ls
+   79  cd ..
+   80  ls
+   81  cd Telegram\ Desktop/
+   82  zip trabalho-mongo 
+   83  zip trabalho-mongo trabalho-mongo.zip
+   84  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --authenticationDatabase admin --u 'matias' -p 'MongoExpress2021!'
+   85  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --authenticationDatabase admin --u matias -p MongoExpress2021!
+   86  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --authenticationDatabase admin --username 'matias' --password 'MongoExpress2021!'
+   87  ls
+   88  pwd
+   89  cd trabalho-mongo/
+   90  ls
+   91  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --authenticationDatabase admin --username 'matias' --password 'MongoExpress2021!'
+   92  neofetch 
+   93  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --authenticationDatabase admin --username 'matias' --password 'MongoExpress2021!'
+   94  cd Downloads/Telegram\ Desktop/trabalho-mongo/
+   95  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --authenticationDatabase admin --username 'matias' --password 'MongoExpress2021!'
+   96  mongoimport -h localhost:8080 -u matias
+   97  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:27017 --authenticationDatabase admin --username 'matias' --password 'MongoExpress2021!'
+   98  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081:8081 --authenticationDatabase admin --username 'matias' --password 'MongoExpress2021!'
+   99  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081:8081 --authenticationDatabase admin --username 'root' --password 'MongoDB2021!'
+  100  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --authenticationDatabase admin --username 'root' --password 'MongoDB2021!'
+  101  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:27017 --authenticationDatabase admin --username 'root' --password 'MongoDB2021!'
+  102  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host=hostname:8081 --port= 27017 --authenticationDatabase admin --username 'root' --password 'MongoDB2021!'
+  103  mongoimport --host=hostname:8081 --port= 27017 --db=covid -u=root -p=MongoDB2021 -c=brasil --file 
+  104  cd Downloads/Telegram\ Desktop/trabalho-mongo/
+  105  mongoimport --host=hostname:8081 --port= 27017 --db=covid -u=root -p=MongoDB2021 -c=brasil --file HIST_PAINEL_COVIDBR_03abr2021.csv 
+  106  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host=hostname:8081 --port= 27017 --authenticationDatabase admin --username 'root' --password 'MongoDB2021!'
+  107  man importmongo
+  108  man mongoimport 
+  109  mongoimport --help
+  110  mongoimport --host=localhost:8081 --port= 27017 --username=matias --password=MongoExpress2021! -db=covid --collection=brasil --type=csv
+  111  mongoimport --host=localhost:8081 --port= 27017 --username=matias --password=MongoExpress2021! -db=covid --collection=brasil --type=csv --file HIST_PAINEL_COVIDBR_03abr2021.csv --headerline
+  112  cd Downloads/Telegram\ Desktop/
+  113  cd trabalho-mongo/
+  114  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:27017 --authenticationDatabase admin --username 'root' --password 'MongoDB2021!'
+  115  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:27017 --port: 27017  --authenticationDatabase admin --username 'root' --password 'MongoDB2021!'
+  116  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --port: 27017  --authenticationDatabase admin --username 'root' --password 'MongoDB2021!'
+  117  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host hostname:8081 --port=27017  --authenticationDatabase admin --username 'root' --password 'MongoDB2021!'
+  118  mongoimport -d covid -c brasil --type csv --headerline --file HIST_PAINEL_COVIDBR_03abr2021.csv --host= localhost:8081 --port=27017  --authenticationDatabase admin --username 'matias' --password 'MongoDB2021!'
+  119  sudo apt autoremove magnus 
+  120  cd Downloads/Telegram\ Desktop/trabalho-mongo/
+  121  ls
+  122  mv HIST_PAINEL_COVIDBR_03abr2021.csv 1.csv
+  123  sudo docker ps
+  124  sudo docker-compose up -d 
+  125  systemctl status docker
+  126  sudo systemctl stop docker
+  127  systemctl status docker
+  128  sudo docker-compose up -d 
+  129  sudo reboot 
+  130  sudo docker-compose up -d 
+  131  cd Downloads/Telegram\ Desktop/trabalho-mongo/
+  132  ls
+  133  sudo docker-compose up -d 
+  134  pluma docker-compose.yml 
+  135  cd Downloads/Telegram\ Desktop/trabalho-mongo/
+  136  pluma docker-compose.yml 
+  137  sudo docker-compose up -d 
+  138  ls
+  139  ping 8.8.8.8
+  140  ping www.terra.com.br
+  141  sudo docker ps
+  142  ls
+  143  python3 consumirApi.py 
+  144  sudo docker-compose up -d 
+  145  mongo
+  146  ls
+  147  sudo docker-compose up -d 
+  148  ls -la 
+  149  sudo systemctl start docker
+  150  sudo docker-compose up -d 
+  151  sudo systemctl status docker
+  152  sudo systemctl stop docker
+  153  sudo systemctl status docker
+  154  sudo systemctl start docker
+  155  sudo docker-compose up -d 
+  156  ls
+  157  sudo rm MongoDB/
+  158  sudo rm -rf MongoDB/
+  159  ls
+  160  sudo docker-compose up -d 
+  161  neofetch 
+  162  cat /etc/resolv.conf 
+  163  sudo vim /etc/resolv.conf 
+  164  sudo docker-compose up -d 
+  165  ip a 
+  166  pluma docker-compose.yml 
+  167  sudo docker-compose up -d -f
+  168  sudo docker-compose up -d --force-recreate
+  169  sudo docker-compose down
+  170  sudo docker-compose up -d
+  171  sudo docker-compose down
+  172  sudo docker-compose ps
+  173  sudo docker  ps
+  174  sudo docker-compose down
+  175  sudo apt autoremove docker*
+  176  sudo apt autoremove docker
+  177  sudo apt install docker
+  178  sudo docker-compose up -d
+  179  sudo apt install docker-compose 
+  180  sudo apt install docker-compose --reinstall 
+  181  sudo docker-compose up -d
+  182  sudo reboot 
+  183  neofetch 
+  184  cat /etc/apt/sources.list
+  185  cd Downloads/Telegram\ Desktop/trabalho-mongo/
+  186  ls
+  187  sudo docker-compose up -d
+  188  history 
+  189  history >> historico.txt

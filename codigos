@@ -1,0 +1,3 @@
+select max(obitosAcumulado), municipio from COVIDBR where estado="PE" group by municipio;
+
+--select * from COVIDBR where municipio = "Recife";

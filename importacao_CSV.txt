@@ -1,0 +1,10 @@
+### Eu mudei o nome do arquivo para 1.csv para ficar mais facil a digitação
+
+sudo docker ps ## Para pegar o CONTAINER ID  do banco de dados MongoDB
+
+
+sudo docker cp 1.csv  b1a7e956a85b:/    ## Para copiar o arquivo .CSV para dentro do CONTAINER do docker
+
+sudo docker exec -it b1a7e956a85b  bash ## Entrando no Bash do CONTAINER
+
+mongoimport  -u root -p MongoDB2021! --authenticationDatabase admin  -d covid -c Brazil --type csv --headerline --file 1.csv
