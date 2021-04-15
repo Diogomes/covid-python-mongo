@@ -1,24 +1,15 @@
 import pymongo
-import json
-
 
 myclient = pymongo.MongoClient("mongodb://root:MongoDB2021!@localhost:27017")
-
-# myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["banco-de-dados2"]
 mycol = mydb["COVIDBR"]
 
 
-# x = mycol.find_one()
-# print(x)
-
-
-
 def menuPrincipal():
 	print("O que deseja fazer: ")
-	print("1 - Pesquisar por sigla Maiuscula do estado.")
-	print("2 - Pesquisar por municípios.")
-	# print("3 - Pesquisar por quantidade de mortes acumuladas por estado.")
+	print("1 - Pesquisar por mortes acumuladas de todos por estado.")
+	print("2 - Pesquisar por mortes acumuladas por município.")
+	print("3 - Inserir dados na Base de Dados.")
 	print("9 - Sair")
 	opcao = input("____________________________________________________________________________\n\n")
 
@@ -27,118 +18,52 @@ def menuPrincipal():
 		
 	if opcao == '2':
 		pesquisar_municipios()
+	
+	if opcao == '3':
+		inserir_dados()
 
+	
 	if opcao == '9':
 		sair()
 
 
-
 def pesquisar_municipios():
 	municipio = input("Digite o município que deseja pesquisar: ")
-	# cidade_formatada = '"{}"'.format(municipio)
-	# m = '"municipio"'
-	# consulta = "{" + '"municipio"' + ":"  +  cidade_formatada  + "}"
-	# consulta = "municipio: " + municipio
-	# print(consulta)
-	listar_dados("municipio" , municipio)
+	listar_obitos_municipio("municipio" , municipio)
   
 def pesquisar_estado():
 	sigla_estado = input("Digite a sigla que deseja pesquisar: ")
-	# cidade_formatada = '"{}"'.format(municipio)
-	# m = '"municipio"'
-	# consulta = "{" + '"municipio"' + ":"  +  cidade_formatada  + "}"
-	# consulta = "municipio: " + municipio
-	# print(consulta)
-	listar_dados("estado" , sigla_estado)
+	listar_obitos_estado("estado" , sigla_estado)
 
 def pesquisar_obitos_acumulados_estado():
 	sigla_estado = input("Digite a sigla do estado que deseja pesquisar a quantidade mortos: ")
 	listar_dados_obitos("estado" , sigla_estado)
 
+def inserir_dados():
+	estados = input("Qual estado deseja adicionar: ")
+	municipios = input("Qual munícipio deseja adicionar: ")
+	datas = input("Informe a data a ser adicionada: ")
+	obitosAcumulados = input("Digite a quantidade óbitos acumulados desta cidade: ")
+
+	mycol.insert({"municipio": municipios, "estado": estados, "obitosAcumulado": obitosAcumulados , "data": datas})
+
+
+# Conversão dos dados num dicionário
+def listar_obitos_estado(colecao, valor):
+	lista = {}
+	for b in mycol.find({colecao:valor}):
+		print(b["estado"] + " --- " + b["data"] + " --- " + b["obitosAcumulado"])
+
+
+def listar_obitos_municipio(colecao, valor):
+	lista = {}
+	for b in mycol.find({colecao:valor}):
+		print(b["municipio"] + " --- " + b["data"] + " --- " + b["obitosAcumulado"])
+
 
 def sair():
 	exit()
 
-
-
-# def listar_dados(colecao, valor):
-	# for b in mycol.find({colecao:valor}):
-	# 	print(b)
-
-funcionado com listas
-def listar_dados(colecao, valor):
-	lista = []
-	for b in mycol.find({colecao:valor}):
-		lista.append(b)
-	print(lista)
-
-# # Testando com dicionários
-# def listar_dados(colecao, valor):
-# 	lista = {}
-# 	lista = mycol.find({colecao:valor})
-# 	print(lista)
-
-
-
-	
-
-
 opcao = ''
 while opcao != 9:
     menuPrincipal()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# def listar_dados_obitos(colecao, valor):
-# 	for b in mycol.({colecao:valor}, {colecao:obitosAcumulado}):
-# 		print(b)
-
-
-# // Requires official MongoShell 3.6+
-# db = db.getSiblingDB("banco-de-dados2");
-# db.getCollection("COVIDBR").aggregate(
-#     [
-#         { 
-#             "$match" : { 
-#                 "estado" : "PE"
-#             }
-#         }, 
-#         { 
-#             "$group" : { 
-#                 "_id" : { 
-#                     "municipio" : "$municipio"
-#                 }, 
-#                 "MAX(obitosAcumulado)" : { 
-#                     "$max" : "$obitosAcumulado"
-#                 }
-#             }
-#         }, 
-#         { 
-#             "$project" : { 
-#                 "MAX(obitosAcumulado)" : "$MAX(obitosAcumulado)", 
-#                 "municipio" : "$_id.municipio", 
-#                 "_id" : NumberInt(0)
-#             }
-#         }
-#     ], 
-#     { 
-#         "allowDiskUse" : true
-#     }
-# );

@@ -1,3 +1,10 @@
 select max(obitosAcumulado), municipio from COVIDBR where estado="PE" group by municipio;
 
 --select * from COVIDBR where municipio = "Recife";
+
+
+db.COVIDBR.insert({municipio: "Disneylandia", estado: "Qualquer"})
+db.COVIDBR.insert({municipio: "IFPE", estado: "Qualquer" , casosNovos: "0" })
+db.COVIDBR.insert({municipio: "IFPE", estado: "Qualquer" , casosNovos: "0" })
+db.COVIDBR.insert({municipio: "Springfield", estado: "Qualquer" , casosNovos: "0", })
+db.COVIDBR.insert({municipio: "Smallville", estado: "Qualquer" , casosNovos: "1", data: ""}) 
