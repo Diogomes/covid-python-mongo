@@ -1,4 +1,5 @@
 import pymongo
+import json
 
 
 myclient = pymongo.MongoClient("mongodb://root:MongoDB2021!@localhost:27017")
@@ -60,9 +61,26 @@ def sair():
 
 
 
+# def listar_dados(colecao, valor):
+	# for b in mycol.find({colecao:valor}):
+	# 	print(b)
+
+funcionado com listas
 def listar_dados(colecao, valor):
+	lista = []
 	for b in mycol.find({colecao:valor}):
-		print(b)
+		lista.append(b)
+	print(lista)
+
+# # Testando com dicionários
+# def listar_dados(colecao, valor):
+# 	lista = {}
+# 	lista = mycol.find({colecao:valor})
+# 	print(lista)
+
+
+
+	
 
 
 opcao = ''
